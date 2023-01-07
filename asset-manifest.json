@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Marketing-Agency-Website/static/css/main.1e7b5c39.css",
-    "main.js": "/Marketing-Agency-Website/static/js/main.1d34eee9.js",
-    "static/media/Web-Development-eBook.pdf": "/Marketing-Agency-Website/static/media/Web-Development-eBook.dbf097dc243ddbb41d87.pdf",
-    "static/media/header-background.mp4": "/Marketing-Agency-Website/static/media/header-background.c9c7a9b4cd6a39223636.mp4",
-    "static/media/ebook1.png": "/Marketing-Agency-Website/static/media/ebook1.fdca64f104a743f0c4a0.png",
-    "index.html": "/Marketing-Agency-Website/index.html",
-    "main.1e7b5c39.css.map": "/Marketing-Agency-Website/static/css/main.1e7b5c39.css.map",
-    "main.1d34eee9.js.map": "/Marketing-Agency-Website/static/js/main.1d34eee9.js.map"
+    "main.css": "/static/css/main.1e7b5c39.css",
+    "main.js": "/static/js/main.8799e812.js",
+    "static/media/Web-Development-eBook.pdf": "/static/media/Web-Development-eBook.dbf097dc243ddbb41d87.pdf",
+    "static/media/header-background.mp4": "/static/media/header-background.c9c7a9b4cd6a39223636.mp4",
+    "static/media/ebook1.png": "/static/media/ebook1.fdca64f104a743f0c4a0.png",
+    "index.html": "/index.html",
+    "main.1e7b5c39.css.map": "/static/css/main.1e7b5c39.css.map",
+    "main.8799e812.js.map": "/static/js/main.8799e812.js.map"
   },
   "entrypoints": [
     "static/css/main.1e7b5c39.css",
-    "static/js/main.1d34eee9.js"
+    "static/js/main.8799e812.js"
   ]
 }
