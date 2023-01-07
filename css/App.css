@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  background-color: #0d0d0d;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(transparent, #ebb02e);
+  border-radius: 6px;
+}
+
+a,
+button {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-light {
+  border: 2px solid #0d0d0d;
+  background-color: #ebb02e;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: #0d0d0d;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+.btn-light:hover {
+  background-color: transparent;
+  border: 2px solid #ebb02e;
+  color: #ebb02e;
+}
+
+.underline {
+  color: #fffbf7;
+  font-size: 2.75rem;
+  padding: 0 1rem;
+  border-bottom: 17.5px solid rgba(235, 176, 46, 0.3);
+  line-height: 17.5px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .underline {
+    font-size: 2.75rem;
+    border-bottom: 15px solid rgba(235, 176, 46, 0.3);
+  }
+}
+@media screen and (max-width: 600px) {
+  .underline {
+    font-size: 7.5vw;
+    border-bottom: 15px solid rgba(235, 176, 46, 0.3);
+  }
+}/*# sourceMappingURL=App.css.map */

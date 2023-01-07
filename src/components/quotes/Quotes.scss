@@ -1,0 +1,51 @@
+$black: #0d0d0d;
+$yellow: #ebb02e;
+
+.quote {
+    // background: $black;
+    background: #000;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .quote-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3.25rem;
+        word-wrap: break-word;
+        color: $yellow;
+        font-weight: 200;
+        font-family: 'Parisienne', cursive;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .quote {
+        .quote-container {
+            h1 {
+                font-size: 5.25vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .quote {
+        .quote-container {
+            padding: 1rem 0.75rem;
+
+            h1 {
+                font-size: 7.75vw;
+            }
+        }
+    }
+}

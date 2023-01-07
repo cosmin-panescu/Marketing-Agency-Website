@@ -1,0 +1,207 @@
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #0d0d0d;
+  border-bottom: 1px solid #ebb02e;
+}
+.services h1 {
+  margin: 4rem 0 3rem 0;
+}
+.services .serv-container {
+  position: relative;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services .serv-container .card {
+  position: relative;
+  height: 230px;
+  width: 375px;
+  background-color: #000;
+  margin: 20px 0;
+  display: flex;
+  border-radius: 20px;
+  border-bottom: 1px solid #ebb02e;
+}
+.services .serv-container .card .img {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.services .serv-container .card .img img {
+  filter: invert(0.85);
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  max-width: 100px;
+}
+.services .serv-container .card .img:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.125);
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+.services .serv-container .card:hover .img {
+  width: 120px;
+  height: 120px;
+  left: -60px;
+  top: calc(50% - 60px);
+  transition: 0.5s ease-in-out;
+  background-color: #ebb02e;
+}
+.services .serv-container .card:hover .img img {
+  width: 100%;
+  max-width: 80px;
+}
+.services .serv-container .card .content {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 60px);
+  padding: 7.5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+.services .serv-container .card .content div h3 {
+  margin-bottom: 7.5px;
+  font-size: 24px;
+  color: #ebb02e;
+  line-height: 110%;
+}
+.services .serv-container .card .content div p {
+  text-align: justify;
+  font-size: 0.925rem;
+}
+
+@media screen and (max-width: 1380px) {
+  .services h1 {
+    margin-top: 6rem;
+  }
+  .services .serv-container {
+    justify-content: space-around;
+  }
+  .services .serv-container .card {
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 1042px) {
+  .services .serv-container .card {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .services .serv-container {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services .serv-container .card {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services .serv-container {
+    flex-direction: row;
+  }
+  .services .serv-container .card {
+    max-width: 275px;
+    flex-direction: column;
+    height: auto;
+    margin: 20px;
+  }
+  .services .serv-container .card:last-child {
+    margin-bottom: 4rem;
+  }
+  .services .serv-container .card .img {
+    position: relative;
+  }
+  .services .serv-container .card .img:before {
+    font-size: 1.6em;
+  }
+  .services .serv-container .card:hover .img:before {
+    color: rgba(13, 13, 13, 0.9);
+  }
+  .services .serv-container .card .img, .services .serv-container .card:hover .img {
+    width: 100%;
+    height: 200px;
+    left: 0;
+  }
+  .services .serv-container .card .img img, .services .serv-container .card:hover .img img {
+    max-width: 100px;
+  }
+  .services .serv-container .card .content {
+    position: relative;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .services .serv-container {
+    width: 100%;
+  }
+  .services .serv-container .card {
+    max-width: 250px;
+    margin: 10px 5px;
+  }
+}
+@media screen and (max-width: 532px) {
+  .services .serv-container {
+    flex-direction: column;
+  }
+  .services .serv-container .card {
+    min-width: 80vw;
+    flex-direction: column;
+    height: auto;
+    margin: 10px 0;
+  }
+  .services .serv-container .card .img {
+    position: relative;
+  }
+  .services .serv-container .card .img:before {
+    font-size: 1.6em;
+  }
+  .services .serv-container .card .img, .services .serv-container .card:hover .img {
+    width: 100%;
+    height: 170px;
+    left: 0;
+  }
+  .services .serv-container .card .img img, .services .serv-container .card:hover .img img {
+    max-width: 100px;
+  }
+  .services .serv-container .card .content {
+    position: relative;
+    width: 100%;
+  }
+  .services .serv-container .card .content h3 {
+    font-size: 1.25rem;
+  }
+  .services .serv-container .card .content p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 335px) {
+  .services .serv-container card {
+    max-width: 200px;
+  }
+}/*# sourceMappingURL=Services.css.map */

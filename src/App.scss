@@ -1,0 +1,88 @@
+$black: #0d0d0d;
+$yellow: #ebb02e;
+$white: #fffbf7;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  background-color: $black;
+}
+
+// Scrollbar styles 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: $black;
+
+  &-thumb {
+    background-image: linear-gradient(transparent, $yellow);
+    border-radius: 6px;
+  }
+}
+
+a,
+button {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-light {
+  border: 2px solid $black;
+  background-color: $yellow;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: $black;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-size: 1.1rem;
+  transition: all .2s ease-in-out;
+  outline: none;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid $yellow;
+    color: $yellow;
+  }
+}
+
+// Title Underline effect
+.underline {
+  color: $white;
+  font-size: 2.75rem;
+  padding: 0 1rem;
+  border-bottom: 17.5px solid rgba($yellow, .3);
+  line-height: 17.5px;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .underline {
+    font-size: 2.75rem;
+    border-bottom: 15px solid rgba($yellow, .3);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .underline {
+    font-size: 7.5vw;
+    border-bottom: 15px solid rgba($yellow, .3);
+  }
+}
